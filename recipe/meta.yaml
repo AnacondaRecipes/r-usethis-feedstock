@@ -24,7 +24,7 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }}
     - r-cli
     - r-clipr >=0.3.0
     - r-crayon
@@ -46,7 +46,7 @@ requirements:
     - r-withr >=2.3.0
     - r-yaml
   run:
-    - r-base
+    - r-base {{ r_version }}
     - r-cli
     - r-clipr >=0.3.0
     - r-crayon
